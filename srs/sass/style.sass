@@ -36,6 +36,9 @@ nav
 		border-right: 2px dotted black
 		padding-right: 28px
 
+h2
+	margin: 0
+
 .subheader
 	top: 50px
 	position: absolute
@@ -157,30 +160,46 @@ nav
 		margin: 118px auto 0 auto
 
 .label
+	position: relative
+	z-index: 1
 	margin: 0 auto
+	height: 24px
 	width: 112px
-	padding: 6px 8px 5px 8px
+	padding: 5px 8px
 	background-color: #000000
 	color: $color_white
 	font-size: 11px
 	font-weight: 400
 	text-align: center
 	text-transform: uppercase
+	&_white
+		background-color: #ffffff
+		color: #000000
 
 .title
+	position: relative
+	z-index: 1
 	margin-top: 38px
 	color: #222222
 	font-size: 38px
+	line-height: 38px
 	font-weight: 700
 	text-align: center
 	text-transform: uppercase
+	&_white
+		color: $color_white
+		//margin-top: 32px
 
 .subtitle
+	position: relative
+	z-index: 1
 	margin-top: 19px
 	color: #222222
 	font-size: 17px
 	font-weight: 400
 	text-align: center
+	&_white
+		color: $color_white
 
 .work_reasons
 	padding: 71px 0 65px 0
@@ -269,60 +288,25 @@ nav
 			cursor: pointer
 
 .choice
-	// padding-top: 57px
 	position: relative
-	&_first_bg
-		height: 499px
-		width: 100%
-		background-color: #070716
-		position: absolute
-	&_second_bg
-		top: 499px
-		height: 397px
-		width: 100%
-		position: absolute
-		background: url('../img/second_bg.jpg') center (center / cover) no-repeat
-	.label
-		margin-top: 57px
+	min-height: 895px
+	padding: 57px 0 138px 0
+	background: url('../img/second_bg.jpg') center (center / cover) no-repeat
+	&_img
+		position: relative
+		display: block
+		margin: 56px auto 0 auto
 		z-index: 1
-		background-color: $color_white
-		color: #070716
-		position: absolute
-		/** Выравниваем по центру **/
-		left: 50%
-		transform: translateX(-50%)
-		/**-----**/
-	.title
-		margin-top: 113px
-		z-index: 1
-		position: absolute
-		color: $color_white
-		// margin: 0
-		left: 50%
-		transform: translateX(-50%)
-	.subtitle
-		margin-top: 160px
-		z-index: 1
-		position: absolute
-		color: $color_white
-		// margin: 0
-		left: 50%
-		transform: translateX(-50%)
-	.choice_uber_car
-		z-index: 1
-		position: absolute
-		left: 50%
-		transform: translateX(-50%)
-		padding-top: 232px
-	.choice_uber_text
-		z-index: 1
-		position: absolute
-		width: 297px
+	&_uber_text
 		color: #222222
 		font-size: 17px
 		font-weight: 300
 		line-height: 24px
 		text-align: center
-		left: 50%
-		transform: translateX(-50%)
-		top: 715px
+	&_black_bg
+		position: absolute
+		top: 0
+		left: 0
+		height: 499px
+		width: 100%
+		background-color: #070716
