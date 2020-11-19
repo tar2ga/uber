@@ -300,7 +300,7 @@
     <section class="world">
         <div class="world_bg"></div>
         <div class="container">
-            <div class="label label_white">города</div>
+            <div class="label label_white label_min">города</div>
             <h2 class="title title_white">По всему миру</h2>
             <div class="subtitle subtitle_white">Мы в вашем городе и по всему миру</div>
             <a href="#" class="world_watch_all_cities">посмотреть все города</a>
@@ -308,27 +308,48 @@
     </section>
 
     <footer>
-        <div class="footer_wrapper">
-            <div class="footer_wrapper_icons">
-                <img src="" alt="facebook" class="img_facebook">
-                <img src="" alt="twitter" class="img_twitter">
-                <img src="" alt="linkedin" class="img_linkedin">
-                <img src="" alt="instagram" class="img_instagram">
+        <div class="wrapper">
+            <div class="wrapper_div"> <!-- такими дивами разделим область на три равные части в sass -->
+                <div class="wrapper_icons">
+                    <a href="#" class="wrapper_icons_round "><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="wrapper_icons_round"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="wrapper_icons_round"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="wrapper_icons_round"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
-            <div class="footer_wrapper_text">
-                    <div>на главную</div>
-                    <div>города</div>
-                    <div>для водителей</div>
-                <div class="footer_wrapper_text_subtitle"></div>
+            <div class="wrapper_div">
+                <div class="wrapper_text">
+                    <div class="wrapper_text_header">
+                        <a href="#">на главную</a>
+                        <a href="#">города</a>
+                        <a href="#">для водителей</a>
+                    </div>
+                    <div class="wrapper_text_subheader">
+                        <a href="#">центр поддержки</a>
+                        <a href="#">вакансии</a>
+                        <a href="#">разработчики</a>
+                        <a href="#">блог</a>
+                        <a href="#">о нас</a>
+                    </div>
+                </div>
             </div>
-            <div class="footer_wrapper_dowload">
-                <img src="" alt="apple" class="dowload_apple">
-                <img src="" alt="google" class="dowload_google">
-                <img src="" alt="windows" class="dowload_windows">
+            <div class="wrapper_div">
+                <div class="wrapper_dowload">
+                    <a href="">
+                        <img src="icons/icon_App Store.svg" alt="apple">
+                    </a>
+                    <a href="">
+                        <img src="icons/icon_Google Play.svg" alt="google">
+                    </a>
+                    <a href="">
+                        <img src="icons/windows_store.png" alt="Windows store">
+                    </a>
+                </div>
             </div>
-
         </div>
-        <div class="language">русский</div>
+        <div class="langwrapper">
+            <a href="#" class="language">русский</a>
+        </div>
     </footer>
 </body>
 </html>

@@ -1,5 +1,9 @@
 $color_white: #ffffff
 $color_sky: #1eacc7
+@import "../fonts/fontawesome-free-5.15.1-web/scss/fontawesome.scss"
+// @import "../fonts/fontawesome-free-5.15.1-web/scss/solid.scss"
+@import "../fonts/fontawesome-free-5.15.1-web/scss/brands.scss"
+// @import "../fonts/fontawesome-free-5.15.1-web/scss/regular.scss"
 
 =btn_hover
 	&:hover
@@ -9,12 +13,17 @@ $color_sky: #1eacc7
 *
 	font-family: 'Roboto', sans-serif
 
+a
+	&:hover
+		text-decoration: none
+
 body
 	/* height: 2000px
 	/* background-color: black
 
 header
 	position: relative
+	height: 50px
 
 nav
 	position: fixed
@@ -57,9 +66,7 @@ h2
 		/* ссылка это строчный элемент. Чтобы работали марджины в .subheader_official делаем block
 		display: block
 		margin-top: 16px
-		min-width: 100%
-
-		/* чтобы картинка никогда не вылезла за ширину ссылки
+		min-width: 100%	// чтобы картинка никогда не вылезла за ширину ссылки
 
 	.subheader_official
 		margin-top: 2px
@@ -106,16 +113,15 @@ h2
 		text-transform: uppercase
 		+btn_hover
 
-
 .promo
-	padding: 150px 0 135px 0
+	padding: 151px 0 135px 0
 	min-height: 800px
 	background: url('../img/first-bg.jpg') center (center / cover) no-repeat
 	.promo_btn
 		display: block
 		margin: 118px auto 0 auto
-		width: 172px
-		height: 46px
+		width: 259px
+		height: 63px
 		box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12)
 		border: none
 		border-radius: 4px
@@ -125,7 +131,7 @@ h2
 		/* обводка при клике
 		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
 		color: $color_white
-		font-size: 14px
+		font-size: 18px
 		font-weight: 400
 		font-style: normal
 		letter-spacing: normal
@@ -134,7 +140,6 @@ h2
 		+btn_hover
 
 	.promo_header
-		margin: 0
 		color: $color_white
 		font-size: 60px
 		font-weight: 700
@@ -160,7 +165,6 @@ h2
 		line-height: 24px
 		text-align: center
 
-
 .label
 	position: relative
 	z-index: 1
@@ -175,16 +179,12 @@ h2
 	text-align: center
 	text-transform: uppercase
 	transition: 0.5s all
-	// &:hover
-	// 	background-color: pink
-	// 	color: #fff
-	// &:active
-	// 	background-color: orange
 
 	&_white
 		background-color: $color_white
 		color: #000000
-
+	&_min
+		width: 76px
 
 .title
 	position: relative
@@ -386,24 +386,22 @@ h2
 .world
 	padding-top: 49px
 	position: relative
-	background-image: url('../img/all_world_bg.jpg')
-	background-repeat: no-repeat
-	background-position-x: center
-	background-position-y: center
-	height: 717px
+	background: url('../img/all_world_bg.jpg') center (center / cover) no-repeat
+	min-height: 717px
 	&_watch_all_cities
-		display: block
 		position: absolute
 		bottom: 0
 		left: 50%
 		transform: translateX(-50%)
-		margin-bottom: 49px
+		bottom: 49px
 		color: $color_sky
 		font-size: 15px
 		font-weight: 400
 		text-transform: uppercase
+		&:hover
+			color: $color_white
+
 footer
-	padding: 14px 0 39px 0
 	&::before
 		content: ''
 		display: block
@@ -412,16 +410,88 @@ footer
 		height: 4px
 		background-color: #1fbad6
 		margin-top: 14px
-.footer_wrapper
-	margin: 30px 23px 19px 23px
+
+.wrapper
+	margin: 34px 23px 19px 23px
 	display: flex
 	justify-content: space-between
-	vertical-align: middle
+	align-items: center
+	&_div
+		width: 33%
+		&:nth-child(3)
+			display: flex
+			justify-content: flex-end
+
+	&_icons
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		width: 287px
+		&_round
+			margin-right: 7px
+			display: flex
+			justify-content: center
+			align-items: center
+			background-color: #070716
+			border-radius: 100%
+			width: 32px
+			height: 32px
+			.fab
+				color: red
 	&_text
 		display: flex
-		justify-content: space-between
-		vertical-align: middle
-		color: #070716
-		font-size: 15px
-		font-weight: 300
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		&_header
+			display: flex
+			justify-content: space-between
+			align-items: center
+			width: 375px
+			a
+				color: #070716
+				font-size: 15px
+				font-weight: 300
+				text-transform: uppercase
+		&_subheader
+			margin-top: 12px
+			display: flex
+			justify-content: space-between
+			align-items: center
+			width: 400px
+			a
+				color: #999999
+				font-size: 11px
+				font-weight: 300
+				text-transform: uppercase
+
+	&_dowload
+		img
+			width: 93px
+			height: 27px
+
+.langwrapper
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	width: 100%
+	&:after
+			margin-top: 31px
+			content: ''
+			display: block
+			width: 100%
+			height: 8px
+			background-color: #070716
+	.language
+		margin-top: 19px
+		color: $color_sky
+		font-size: 11px
+		font-weight: 400
+		text-align: center
 		text-transform: uppercase
+		&:hover
+			color: blue
+
+
+
