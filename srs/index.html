@@ -24,23 +24,30 @@
                     <li class="menu_item"><a href="#" class="menu_link">Оставить заявку</a></li>
                 </ul>
             </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
         <div class="subheader">
             <div class="container">
                 <div class="row">
                     <!-- колонки должны быть внутри строки -->
                     <!-- пропускаем одну колонку и занимаем 4 -->
-                    <div class="col-md-4 offset-md-1">
+                    <!-- col-6 это для самых маленьких разширений (<576px)-->
+                    <div class="col-6 col-md-4 offset-md-1">
                         <a href="#" class="subheader_logo"><img src="icons/logo_uber.png" alt="logo"></a>
                         <div class="subheader_official">Официальный партнер Uber в Москве</div>
                     </div>
                     <!-- пропускаем две колонки и занимаем две -->
-                    <div class="col-md-2 offset-md-2">
+                    <div class="xs-hidden col-md-3 offset-md-1 col-xl-2 offset-xl-2">
                         <div class="subheader_call">Звоните нам ежедневно</div>
                         <a href="tel:+74957970988" class="subheader_phone">8 495 797 09 88</a>
                     </div>
                     <!-- занимаем две колонки -->
-                    <div class="col-md-2">
+                    <div class="col-6 col-md-3">
+                        <a href="tel:+74957970988" class="xs-visible subheader_phone">8 495 797 09 88</a>
                         <button class="subheader_btn">заказать звонок</button>
                     </div>
                 </div>
@@ -51,7 +58,7 @@
     <section class="promo">
         <div class="container">
             <div class="row">
-                <div class="col-md-10 offset-md-1">
+                <div class="col-md-12 col-ld-10 offset-ld-1">
                     <!-- h1 должен быть на странице. Причём в единственном экземпляре -->
                     <h1 class="promo_header">
                         КОМПАНИЯ UBER PARTNERS!
@@ -70,31 +77,31 @@
         </div>
     </section>
 
-    <section class="work_reasons">
+    <section class="reason">
         <div class="container">
             <div class="label">преимущества</div>
-            <h2 class="title">8 причин начать работать с нами</h2>
+            <div class="title">8 причин начать работать с нами</div>
             <div class="row">
                 <div class="col-md-6">
                     <div class="reason_item">
-                        <div class="reason_round">
+                        <div class="reason_item_round">
                             <img src="icons/card.png" alt="card" class="reason_img">
                         </div>
-                        <div class="reason_desc">
-                            <div class="reason_header">Никаких наличных, оплата происходит автоматически
+                        <div class="reason_item_desc">
+                            <div class="reason_item_desc_header">Никаких наличных, оплата происходит автоматически
                             </div>
-                            <div class="reason_text">Стоимость поездки оплачивается пассажиром с привязанной банковской карты, т.е. нет никаких рисков связанных с перевозкой наличности как для пассажира, так и для водителя, Вам не нужно искать мелкие деньги для размена.</div>
+                            <div class="reason_item_desc_text">Стоимость поездки оплачивается пассажиром с привязанной банковской карты, т.е. нет никаких рисков связанных с перевозкой наличности как для пассажира, так и для водителя, Вам не нужно искать мелкие деньги для размена.</div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="reason_item">
-                        <div class="reason_round">
+                        <div class="reason_item_round">
                             <img src="icons/chart.png" alt="chart" class="reason_img">
                         </div>
-                        <div class="reason_desc">
-                            <div class="reason_header">Комиссия 8% + БОНУСЫ</div>
-                            <div class="reason_text">У нас минимальная комиссия и мы выплачиваем бонусы за каждую поездку, некоторые наши конкуренты оставляют бонусы себе. Мы работаем честно и с нами водители зарабатывают больше!</div>
+                        <div class="reason_item_desc">
+                            <div class="reason_item_desc_header">Комиссия 8% + БОНУСЫ</div>
+                            <div class="reason_item_desc_text">У нас минимальная комиссия и мы выплачиваем бонусы за каждую поездку, некоторые наши конкуренты оставляют бонусы себе. Мы работаем честно и с нами водители зарабатывают больше!</div>
                         </div>
                     </div>
                 </div>
@@ -102,25 +109,25 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="reason_item">
-                        <div class="reason_round">
+                        <div class="reason_item_round">
                             <img src="icons/money.png" alt="money" class="reason_img">
                         </div>
-                        <div class="reason_desc">
-                            <div class="reason_header">Высокий доход с гарантированными выплатами
+                        <div class="reason_item_desc">
+                            <div class="reason_item_desc_header">Высокий доход с гарантированными выплатами
                             </div>
-                            <div class="reason_text">Мы выплачиваем заработную плату на личную банковскую карту водителя! Вам не нужно оформлять ООО, ИП, платить налоги, подавать декларацию, оплачивать бухгалтерские услуги и ведение банковского счета.</div>
+                            <div class="reason_item_desc_text">Мы выплачиваем заработную плату на личную банковскую карту водителя! Вам не нужно оформлять ООО, ИП, платить налоги, подавать декларацию, оплачивать бухгалтерские услуги и ведение банковского счета.</div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="reason_item">
-                        <div class="reason_round">
+                        <div class="reason_item_round">
                             <img src="icons/calendar.png" alt="calendar" class="reason_img">
                         </div>
-                        <div class="reason_desc">
-                            <div class="reason_header">Работа в удобное время, никаких графиков
+                        <div class="reason_item_desc">
+                            <div class="reason_item_desc_header">Работа в удобное время, никаких графиков
                             </div>
-                            <div class="reason_text">Вы просто нажимаете кнопку выйти на линию для начала работы, когда решите закончить, нажимаете выйти с линии. Вы можете подрабатывать только утром, вечером, в выходные или праздничные дни!</div>
+                            <div class="reason_item_desc_text">Вы просто нажимаете кнопку выйти на линию для начала работы, когда решите закончить, нажимаете выйти с линии. Вы можете подрабатывать только утром, вечером, в выходные или праздничные дни!</div>
                         </div>
                     </div>
                 </div>
@@ -128,24 +135,24 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="reason_item">
-                        <div class="reason_round">
+                        <div class="reason_item_round">
                             <img src="icons/key.png" alt="key" class="reason_img">
                         </div>
-                        <div class="reason_desc">
-                            <div class="reason_header">Комфортное, прозрачное и простое подключение
+                        <div class="reason_item_desc">
+                            <div class="reason_item_desc_header">Комфортное, прозрачное и простое подключение
                             </div>
-                            <div class="reason_text">Мы подключаем дистанционно и бесплатно, Вам нет необходимости приезжать к нам! Вы присылаете нам копии документов, мы регистрируем Вас и присылаем данные для подключения, через 1-2 дня Вы можете начинать работать!</div>
+                            <div class="reason_item_desc_text">Мы подключаем дистанционно и бесплатно, Вам нет необходимости приезжать к нам! Вы присылаете нам копии документов, мы регистрируем Вас и присылаем данные для подключения, через 1-2 дня Вы можете начинать работать!</div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="reason_item">
-                        <div class="reason_round">
+                        <div class="reason_item_round">
                             <img src="icons/location.png" alt="location" class="reason_img">
                         </div>
-                        <div class="reason_desc">
-                            <div class="reason_header">Всегда большое количество заказов</div>
-                            <div class="reason_text">Приложение показывает, где на данный момент больше всего заказов и где действуют повышенные тарифы. У Вас не будет простоя и холостых пробегов. Наши пассажиры всегда приятные и абсолютно неконфликтные люди, которых приятно
+                        <div class="reason_item_desc">
+                            <div class="reason_item_desc_header">Всегда большое количество заказов</div>
+                            <div class="reason_item_desc_text">Приложение показывает, где на данный момент больше всего заказов и где действуют повышенные тарифы. У Вас не будет простоя и холостых пробегов. Наши пассажиры всегда приятные и абсолютно неконфликтные люди, которых приятно
                                 возить.
                             </div>
                         </div>
@@ -155,23 +162,23 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="reason_item">
-                        <div class="reason_round">
+                        <div class="reason_item_round">
                             <img src="icons/call.png" alt="call" class="reason_img">
                         </div>
-                        <div class="reason_desc">
-                            <div class="reason_header">Круглосуточная поддержка</div>
-                            <div class="reason_text">В Uber действует круглосуточная поддержка водителей по электронной почте. Если что-то непонятно, Вы всегда можете задать вопрос через On-line консультацию.</div>
+                        <div class="reason_item_desc reason_item_desc_center">
+                            <div class="reason_item_desc_header">Круглосуточная поддержка</div>
+                            <div class="reason_item_desc_text">В Uber действует круглосуточная поддержка водителей по электронной почте. Если что-то непонятно, Вы всегда можете задать вопрос через On-line консультацию.</div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="reason_item">
-                        <div class="reason_round">
+                        <div class="reason_item_round">
                             <img src="icons/car.png" alt="car" class="reason_img">
                         </div>
-                        <div class="reason_desc">
-                            <div class="reason_header">Без шашечек и наклеек</div>
-                            <div class="reason_text">Вам не нужно менять цвет, устанавливать «шашки» на автомобиль и обклеивать его наклейками.</div>
+                        <div class="reason_item_desc reason_item_desc_center">
+                            <div class="reason_item_desc_header">Без шашечек и наклеек</div>
+                            <div class="reason_item_desc_text">Вам не нужно менять цвет, устанавливать «шашки» на автомобиль и обклеивать его наклейками.</div>
                         </div>
                     </div>
                 </div>
@@ -311,7 +318,7 @@
         <div class="wrapper">
             <div class="wrapper_div"> <!-- такими дивами разделим область на три равные части в sass -->
                 <div class="wrapper_icons">
-                    <!-- <a href="#" class="wrapper_icons_round "><i class="fab fa-facebook-f"></i></a> -->
+                    <a href="#" class="wrapper_icons_round "><i class="fab fa-facebook-f"></i></a>
                     <a href="#" class="wrapper_icons_round"><i class="uf facebook"></i></i></a>
                     <a href="#" class="wrapper_icons_round"><i class="uf twitter"></i></a>
                     <a href="#" class="wrapper_icons_round"><i class="uf linkedin"></i></a>
@@ -352,5 +359,7 @@
             <a href="#" class="language">русский</a>
         </div>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
