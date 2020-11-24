@@ -193,37 +193,37 @@
             <div class="subtitle">Сделайте заказ, совершите поездку и оплатите ее стоимость, используя свой мобильный телефон</div>
 
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-lg-4 col-sm-6">
                     <div class="mobile_item mobile_item_1">
                         <div class="mobile_item_subtitle">оформление заказа одним касанием</div>
                         <div class="mobile_item_plus"></div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-sm-6">
                     <div class="mobile_item mobile_item_2">
                         <div class="mobile_item_subtitle">надежная подача</div>
-                        <div class="mobile_item_plus"></div>
+                        <div class="mobile_item_plus"></div>-sm
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-sm-6">
                     <div class="mobile_item mobile_item_3">
                         <div class="mobile_item_subtitle">прозрачные цены</div>
                         <div class="mobile_item_plus"></div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-sm-6">
                     <div class="mobile_item mobile_item_4">
                         <div class="mobile_item_subtitle">безналичная оплата</div>
                         <div class="mobile_item_plus"></div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-sm-6">
                     <div class="mobile_item mobile_item_5">
                         <div class="mobile_item_subtitle">обратная связь</div>
                         <div class="mobile_item_plus"></div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-sm-6">
                     <div class="mobile_item mobile_item_6">
                         <div class="mobile_item_subtitle">разделить стоимость поездки</div>
                         <div class="mobile_item_plus"></div>
@@ -239,7 +239,6 @@
             <div class="label label_white">Возможности</div>
             <h2 class="title title_white">Выбор - отличная штука!</h2>
             <div class="subtitle subtitle_white">Закажите автомобиль, который подходит вам по стилю и бюджету</div>
-
             <img src="img/uber_car.png" alt="uber car" class="choice_img">
             <div class="choice_uber_text">Машины на каждый день. <br> Лучше, быстрее и дешевле, чем такси</div>
         </div>
@@ -316,9 +315,8 @@
 
     <footer>
         <div class="wrapper">
-            <div class="wrapper_div"> <!-- такими дивами разделим область на три равные части в sass -->
+            <div class="wrapper_div l-hidden"> <!-- такими дивами разделим область на три равные части в sass -->
                 <div class="wrapper_icons">
-                    <a href="#" class="wrapper_icons_round "><i class="fab fa-facebook-f"></i></a>
                     <a href="#" class="wrapper_icons_round"><i class="uf facebook"></i></i></a>
                     <a href="#" class="wrapper_icons_round"><i class="uf twitter"></i></a>
                     <a href="#" class="wrapper_icons_round"><i class="uf linkedin"></i></a>
@@ -332,17 +330,27 @@
                         <a href="#">города</a>
                         <a href="#">для водителей</a>
                     </div>
-                    <div class="wrapper_text_subheader">
+                    <div class="wrapper_text_subheader xs-hid">
                         <a href="#">центр поддержки</a>
                         <a href="#">вакансии</a>
                         <a href="#">разработчики</a>
                         <a href="#">блог</a>
                         <a href="#">о нас</a>
                     </div>
+                    <div class="wrapper_text_subheader_1 xs-vis">
+                        <a href="#">центр поддержки</a>
+                        <a href="#">вакансии</a>
+                    </div>
+                    <div class="wrapper_text_subheader_2 xs-vis">
+                        <a href="#">разработчики</a>
+                        <a href="#">блог</a>
+                        <a href="#">о нас</a>
+                    </div>
+
                 </div>
             </div>
-            <div class="wrapper_div">
-                <div class="wrapper_dowload">
+            <div class="wrapper_div l-hidden">
+                <div class="wrapper_dowload div_flex_end">
                     <a href="">
                         <img src="icons/icon_App Store.svg" alt="apple">
                     </a>
@@ -357,7 +365,27 @@
         </div>
         <div class="langwrapper">
             <a href="#" class="language">русский</a>
+            <div class="wrapper_div l-visible">
+                <div class="wrapper_icons">
+                    <a href="#" class="wrapper_icons_round"><i class="uf facebook"></i></i></a>
+                    <a href="#" class="wrapper_icons_round"><i class="uf twitter"></i></a>
+                    <a href="#" class="wrapper_icons_round"><i class="uf linkedin"></i></a>
+                    <a href="#" class="wrapper_icons_round"><i class="uf instagram"></i></a>
+                </div>
+                <div class="wrapper_dowload">
+                    <a href="">
+                        <img src="icons/icon_App Store.svg" alt="apple">
+                    </a>
+                    <a href="">
+                        <img src="icons/icon_Google Play.svg" alt="google">
+                    </a>
+                    <a href="">
+                        <img src="icons/windows_store.png" alt="Windows store">
+                    </a>
+                </div>
+            </div>
         </div>
+
     </footer>
 
     <script src="js/script.js"></script>

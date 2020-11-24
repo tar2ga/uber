@@ -236,7 +236,7 @@ h2
 .mobile
 	min-height: 864px
 	padding: 48px 0 79px 0
-	background: url('../img/second_bg.jpg') center (center / cover) no-repeat
+	background: url('../img/second_bg-min.jpg') center (center / cover) no-repeat
 	.row
 		margin-top: 32px
 	&_item
@@ -404,9 +404,10 @@ footer
 	align-items: center
 	&_div
 		width: 33%
-		&:nth-child(3)
-			display: flex
-			justify-content: flex-end
+	.div_flex_end
+		// &:nth-child(3)
+		display: flex
+		justify-content: flex-end
 
 	&_icons
 		display: flex
@@ -453,6 +454,7 @@ footer
 
 	&_dowload
 		img
+			margin-right: 4px
 			width: 93px
 			height: 27px
 
@@ -480,4 +482,8 @@ footer
 			color: blue
 
 .xs-visible
-		display: none
+	display: none
+.l-visible
+	display: none
+.xs-vis
+	display: none
